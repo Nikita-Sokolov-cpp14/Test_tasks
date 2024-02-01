@@ -1,0 +1,5 @@
+cmake_minimum_required (VERSION 3.20)
+project (Curves_DLL)
+set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
+file (GLOB src "Sources/*.cpp")
+add_library(Curves_DLL SHARED ${src})
